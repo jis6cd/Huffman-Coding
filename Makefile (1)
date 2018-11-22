@@ -1,0 +1,17 @@
+#Jessica Shaughnessy
+#jis6cd
+#11/20/2017
+#Makefile
+#lab section: 106 (3:30-4:45)
+
+
+CXX = clang++ -Wall -g -std=c++11
+OFILES =  huffmandec.o huffmannode.o
+.SUFFIXES:.o .cpp
+
+
+main:	$(OFILES)
+	$(CXX) $(OFILES)
+
+clean:
+	-rm -f *.o *~
